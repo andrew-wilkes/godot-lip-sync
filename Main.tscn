@@ -1,0 +1,65 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Audio" type="AudioStreamPlayer" parent="."]
+
+[node name="Play" type="Button" parent="."]
+margin_left = 49.0
+margin_top = 35.0
+margin_right = 87.0
+margin_bottom = 55.0
+text = "Play"
+
+[node name="VB" type="VBoxContainer" parent="."]
+margin_left = 50.0
+margin_top = 96.0
+margin_right = 458.0
+margin_bottom = 136.0
+custom_constants/separation = 5
+
+[node name="PB1" type="ProgressBar" parent="VB"]
+margin_right = 408.0
+margin_bottom = 14.0
+
+[node name="PB2" type="ProgressBar" parent="VB"]
+margin_top = 19.0
+margin_right = 408.0
+margin_bottom = 33.0
+
+[node name="PB3" type="ProgressBar" parent="VB"]
+margin_top = 38.0
+margin_right = 408.0
+margin_bottom = 52.0
+
+[node name="PB4" type="ProgressBar" parent="VB"]
+margin_top = 57.0
+margin_right = 408.0
+margin_bottom = 71.0
+
+[node name="PB5" type="ProgressBar" parent="VB"]
+margin_top = 76.0
+margin_right = 408.0
+margin_bottom = 90.0
+
+[node name="PB6" type="ProgressBar" parent="VB"]
+margin_top = 95.0
+margin_right = 408.0
+margin_bottom = 109.0
+
+[node name="PB7" type="ProgressBar" parent="VB"]
+margin_top = 114.0
+margin_right = 408.0
+margin_bottom = 128.0
+
+[node name="PB8" type="ProgressBar" parent="VB"]
+margin_top = 133.0
+margin_right = 408.0
+margin_bottom = 147.0
+
+[connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
